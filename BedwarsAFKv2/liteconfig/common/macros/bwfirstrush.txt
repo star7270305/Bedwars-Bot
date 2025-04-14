@@ -52,7 +52,7 @@ endif;
 
 log("&f[&cBW&f] Saved Full Team: &7%@&yourign% | %@&teammate1% | %@&teammate2% | %@&teammate3%")
 
-messages[] = "/who";
+echo(/who)
 exec("bwteammate.txt","bwteammate")
 
 // Walks to item shop
