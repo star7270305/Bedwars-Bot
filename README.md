@@ -6,12 +6,12 @@
 A Bedwars Bot made for Hypixel but focus on legit, compatibility with Fours and Dreams modes. Hasdefense, failsafes, and requeuing. Coded in Macro / Keybind mod for 1.12.2 Liteloader + Forge. 
 
 ### Please ⭐ this Repository (If you do use my bot)!
-![Stars](https://img.shields.io/github/stars/familiar/Bedwars-Bot)
+![Stars](https://img.shields.io/github/stars/star7270305/Bedwars-Bot)
 </div>
 
 ### What's the difference between V1 & V2?
 - V1 has been tested for longer.
-- V2 looks more legit + has pvp and bridging.
+- V2 looks more legit + has pvp and bridging.(I removed the bridging to make it more stable)
 
 # Discord Server
 ### We now have a discord server! If you want to get help, suggest ideas, or collaborate with others, join here:
