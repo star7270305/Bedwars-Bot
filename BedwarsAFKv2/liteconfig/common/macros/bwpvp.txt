@@ -45,5 +45,14 @@ do(10);
 
 loop
 
+log("&f[&cBW&f] Eating Golden Apple")
+pick(golden_apple);
+applecount = 0;
+  do();
+  key(use);
+  inc(#applecount);
+  until(%#applecount% = 37);
+wait(200ms)
+
 stop(all)
 exec("bwrc.txt","bwrc")
