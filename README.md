@@ -2,7 +2,7 @@
 
 <img src="https://imgur.com/wyfK8va.png" alt="Sunsi" style="width: 15%;" />
 
-# Bedwars-Bot
+# Bedwars-Bot-Modded
 A Bedwars Bot made for Hypixel but focus on legit, compatibility with Fours and Dreams modes. Hasdefense, failsafes, and requeuing. Coded in Macro / Keybind mod for 1.12.2 Liteloader + Forge. 
 
 ### Please ⭐ this Repository (If you do use my bot)!
