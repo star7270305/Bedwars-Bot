@@ -2,7 +2,7 @@ stop(rc)
 stop(drop)
 stop(timer);
 wait(10ms)
-looks(-%@#realyaw%,80,.2);
+looks(-%ENTITYYAWFROMPLAYER%,40,.2);
 wait(200ms)
 log("&f[&cBW&f] Placing Iron Golem")
 pick(spawn_egg);
@@ -16,14 +16,6 @@ key(use);
 wait(100ms)
 key(use);
 wait(100ms)
-log("&f[&cBW&f] Eating Golden Apple")
-pick(golden_apple);
-applecount = 0;
-  do();
-  key(use);
-  inc(#applecount);
-  until(%#applecount% = 37);
-wait(200ms)
 log("&f[&cBW&f] Engaging with Enemy")
 exec("bwpvp.txt","bwpvp")
 stop(bwdefense)
