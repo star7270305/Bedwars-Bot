@@ -181,16 +181,11 @@ ifcontains(%CHATCLEAN%,"Your bed was destroyed so you are a spectator!")
 	exec("Command.txt","Command")
 endif
 
-//With Hypixel's new system, you gain tokens whenever you win a minigame. Admins have confirmed this won't be changing anytime soon.
-
-ifcontains(%CHATCLEAN%,"tokens! (Win)")
-	wait(200ms)	
-	exec("screenshot.txt","screenshot")
-endif
-
 ifcontains(%CHATCLEAN%,"Reward Summary")
 	echo("gg")
-	wait(300ms)
+	wait(100ms)
+	exec("screenshot.txt","screenshot")
+	wait(100ms)
 	log("&f[&cBW&f] Game Ended. Requeueing.")
     stop(bwafk)
 	stop(bwattack)
@@ -550,73 +545,203 @@ ifcontains(%CHATCLEAN%,"You are currently playing on Nostalgia");
 	stop;
 endif;
 
+// In this map, when the bot tries to go back to the generator, it gets stuck here.
+ifcontains(%CHATCLEAN%,"You are currently playing on Springtide");
+    wait(100ms)
+	log("&f[&cBW&f] This is an broken map. Will requeue.")
+	keyup(jump);
+	keyup(forward);
+	keyup(left);
+	keyup(right);
+	keyup(back);
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	wait(1000ms);
+	exec("command.txt","command")
+	stop;
+endif;
+
+// In this map, when the bot tries to go back to the generator, it gets stuck here.
+ifcontains(%CHATCLEAN%,"You are currently playing on Egg Run");
+    wait(100ms)
+	log("&f[&cBW&f] This is an broken map. Will requeue.")
+	keyup(jump);
+	keyup(forward);
+	keyup(left);
+	keyup(right);
+	keyup(back);
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	wait(1000ms);
+	exec("command.txt","command")
+	stop;
+endif;
+
+// In this map, when the bot tries to go back to the generator, it gets stuck here.
+ifcontains(%CHATCLEAN%,"You are currently playing on Rigged");
+    wait(100ms)
+	log("&f[&cBW&f] This is an broken map. Will requeue.")
+	keyup(jump);
+	keyup(forward);
+	keyup(left);
+	keyup(right);
+	keyup(back);
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	wait(1000ms);
+	exec("command.txt","command")
+	stop;
+endif;
+
+// In this map, when the bot tries to go back to the generator, it gets stuck here.
+ifcontains(%CHATCLEAN%,"You are currently playing on Bunnywars");
+    wait(100ms)
+	log("&f[&cBW&f] This is an broken map. Will requeue.")
+	keyup(jump);
+	keyup(forward);
+	keyup(left);
+	keyup(right);
+	keyup(back);
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	wait(1000ms);
+	exec("command.txt","command")
+	stop;
+endif;
+
+// In this map, when the bot tries to go back to the generator, it gets stuck here.
+ifcontains(%CHATCLEAN%,"You are currently playing on Foxtrots");
+    wait(100ms)
+	log("&f[&cBW&f] This is an broken map. Will requeue.")
+	keyup(jump);
+	keyup(forward);
+	keyup(left);
+	keyup(right);
+	keyup(back);
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	wait(1000ms);
+	exec("command.txt","command")
+	stop;
+endif;
+
+// In this map, when the bot tries to go back to the generator, it gets stuck here.
+ifcontains(%CHATCLEAN%,"You are currently playing on Yandi");
+    wait(100ms)
+	log("&f[&cBW&f] This is an broken map. Will requeue.")
+	keyup(jump);
+	keyup(forward);
+	keyup(left);
+	keyup(right);
+	keyup(back);
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	wait(1000ms);
+	exec("command.txt","command")
+	stop;
+endif;
+
 //Maps that you can bridge in, but it is disabled due to it getting the bot stuck.
 
 
 //On this map, after bridging, the bot gets stuck
 ifcontains(%CHATCLEAN%,"You are currently playing on Relic");
     wait(100ms)
-	@#bridgemap = 0;
+	@#bridgemap = -1;
 	log("&f[&cBW&f] This is a bridge map. However it is making the bot stuck. Will not activate bridging on this map.")
 endif;
 
-//Maps to dodge.
 
-
-
-ifcontains(%CHATCLEAN%,"You are currently playing on Lost Temple");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
-
-ifcontains(%CHATCLEAN%,"You are currently playing on Tigris");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
-
-ifcontains(%CHATCLEAN%,"You are currently playing on Graveship");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
-
-ifcontains(%CHATCLEAN%,"You are currently playing on Mystery");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
-
-ifcontains(%CHATCLEAN%,"You are currently playing on Infinite");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
-
-ifcontains(%CHATCLEAN%,"You are currently playing on Kubo");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
-
-ifcontains(%CHATCLEAN%,"You are currently playing on Raze");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
-
-ifcontains(%CHATCLEAN%,"You are currently playing on Zen Plaza");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
-
-ifcontains(%CHATCLEAN%,"You are currently playing on Archway");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
 
 //Classic Duels Bot
 ifcontains(%CHATCLEAN%,"Reward Summary");
