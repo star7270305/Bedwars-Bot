@@ -3,7 +3,7 @@
 <img src="https://imgur.com/wyfK8va.png" alt="Sunsi" style="width: 15%;" />
 
 # Bedwars-Bot
-A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has resource sharing, defense, failsafes, and requeuing. Coded in Macro / Keybind mod for 1.12.2 Liteloader + Forge. 
+A Bedwars Bot made for Hypixel but focus on legit, compatibility with Fours and Dreams modes. Hasdefense, failsafes, and requeuing. Coded in Macro / Keybind mod for 1.12.2 Liteloader + Forge. 
 
 ### Please ⭐ this Repository (If you do use my bot)!
 ![Stars](https://img.shields.io/github/stars/familiar/Bedwars-Bot)
@@ -106,19 +106,4 @@ It isn't hard to bypass Hypixel while botting (I wish staff listened to my sugge
 - When it drops resources, it drops one at a time, not full stacks. This makes it look more legit in replays as it'll be constantly dropping resources to nearby teammates at all times. It only drops resources after it has purchased iron armor (this allows it to save for iron golems).
 - It buys iron golems and eats golden apples. Have you seen a bedwars bot do that before?
 
-P.S: I ran it 24/7. It can basically go infinitely without a ban. I stopped running it because my old PC blue-screened from running it for a month straight without any restarts.. Welp.
 
-### Ban Status (Before Video):
-![banstatus](https://github.com/familiar/Bedwars-Bot/assets/136278435/7dd0a19c-c4c3-4941-9a57-d6a659904b94)
-
-*Sunsi was banned 1 day after my video was posted. Staff manually banned it (first staff macro-check in bedwars ever) after thousands of people saw the video. Was expected.
-
-# Stats
-My bot used to average 5+ normal KDR daily from iron golem spamming. It could usually survive for a while before dying:
-
-
-### Couple of days - 1 Week of Running:
-![MONTHLY](https://github.com/familiar/Bedwars-Bot/assets/136278435/fe13b261-5ed0-4e70-ae58-e41d55a8dfb4)
-
-### 1/2 Months of Running:
-![sunsi_daily_stats](https://github.com/familiar/Bedwars-Bot/assets/136278435/5045e073-0974-4bc4-916a-f8e8973b44d3)
