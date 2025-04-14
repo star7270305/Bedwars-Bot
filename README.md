@@ -16,14 +16,14 @@ A Bedwars Bot made for Hypixel but focus on legit, compatibility with Fours and 
 # Discord Server
 ### We now have a discord server! If you want to get help, suggest ideas, or collaborate with others, join here:
 ### https://discord.gg/sunsi
+# IMPORTANT
+## hypixel has disabled 1.12.2 to login so u need to use via proxy
 
 # Getting Started
-### Video Tutorial (Credit: Toprak1337): https://youtu.be/O_39pO7w1F8
 
-1. First, download and extract this repository.
-2. Open the "Dependencies" folder, and install forge 1.12.2 if not installed already. (Make sure you have the Minecraft launcher installed).
-3. Once finished installing, run the liteloader 1.12.2 installer, and click the "Extend from:" dropdown. Click 1.12.2 Forge.
-4. Open the "BedwarsAFK" (or BedwarsAFKv2 depending on the version you downloaded) folder, which is inside of the Bedwars-Bot-main folder. Open the "liteconfig" folder, the "common" folder, then the "macros" folder.
+#### Modrinth
+1.Go to releases download 
+  (https://github.com/star7270305/Bedwars-Bot/releases)
 
 #### Minecraft Launcher
 1. First, download and extract this repository.
