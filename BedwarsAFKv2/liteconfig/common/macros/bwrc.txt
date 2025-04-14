@@ -19,8 +19,10 @@ do;
           stop(bwlookmid)
           keyup(forward)
           keyup(back)
+          log("&f[&cBW&f] looking to Nearest Teammate. &7(%@&target% | %@#distancefrom% blocks away)")
+          looks(%ENTITYYAWFROMPLAYER%,%ENTITYPITCHFROMPLAYER%,.4);
           wait(100ms)
-          wait(1500ms)
+          wait(15000ms)
           exec("bwlookmid.txt","bwlookmid");
         endif;
         if(((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate1%) && (%@#distancefrom% <= 0)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate2%) && (%@#distancefrom% <= 0)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate3%) && (%@#distancefrom% <= 0)));
@@ -29,6 +31,7 @@ do;
           keyup(forward)
           keyup(back)
           looks(%ENTITYYAWFROMPLAYER%,%ENTITYPITCHFROMPLAYER%,.6);
+          wait(6500ms)
           exec("bwlookmid.txt","bwlookmid");
         endif;
         if((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% != %@&teammate1%) && (%ENTITYNAME% != %@&teammate2%) && (%ENTITYNAME% != %@&teammate3%) && (%@#distancefrom% <= 6));
