@@ -21,6 +21,7 @@ exec("look.txt","look");
           stop(bwgotogen)
           stop(bwafk)
           stop(bwtimer)
+          stop(look)
           keyup(forward)
           keyup(back)
           log("&f[&cBW&f] Detected Enemy in PVP range")
