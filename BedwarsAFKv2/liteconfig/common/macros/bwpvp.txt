@@ -56,3 +56,4 @@ wait(200ms)
 
 stop(all)
 exec("bwrc.txt","bwrc")
+exec("look.txt","look")
