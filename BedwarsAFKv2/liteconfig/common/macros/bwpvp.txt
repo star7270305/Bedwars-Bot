@@ -44,7 +44,7 @@ do(10);
       next;
 
 loop
-
+wait(5000ms)
 log("&f[&cBW&f] Eating Golden Apple")
 pick(golden_apple);
 applecount = 0;
