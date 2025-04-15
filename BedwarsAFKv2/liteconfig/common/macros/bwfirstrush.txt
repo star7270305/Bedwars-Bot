@@ -194,4 +194,5 @@ endif;
 //Done, initial rush complete
 
 exec("bwrc.txt","bwrc")
+exec("look.txt","look")
 exec("bwtimer.txt","bwtimer")
