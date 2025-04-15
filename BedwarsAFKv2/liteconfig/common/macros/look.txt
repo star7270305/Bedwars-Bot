@@ -1,6 +1,4 @@
 keyup(sneak)
-exec("bwgotogen.txt","bwgotogen");
-exec("bwafk.txt","bwafk");
 @&targetypos = "";
 
 do;
