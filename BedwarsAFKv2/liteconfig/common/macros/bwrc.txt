@@ -14,7 +14,6 @@ do;
       
       //If target isnt yourself look at them;
       if((%@&target% != %@&yourign%) && (@#distancefrom <= 10) && (%ENTITYHELMETID% == "leather_helmet"));
-exec("look.txt","look");
         if((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% != %@&teammate1%) && (%ENTITYNAME% != %@&teammate2%) && (%ENTITYNAME% != %@&teammate3%) && (%@#distancefrom% <= 6));
           keyup(sneak)
           stop(bwlookmid)
