@@ -1,0 +1,28 @@
+    //Iterating over players at middle that fit the criteria - in middle as specified by vals above;
+    foreach("entities(filters:[{type:player}])");
+      @&target = "%ENTITYNAME%";
+      @&targetypos = "%ENTITYYPOS%";
+      @#distancefrom = "%ENTITYDISTANCE%";
+      
+      //If target isnt yourself look at them;
+      if((%@&target% != %@&yourign%) && (@#distancefrom <= 10) && (%ENTITYHELMETID% == "leather_helmet"));
+        if(((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate1%) && (%@#distancefrom% < 4)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate2%) && (%@#distancefrom% < 4)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate3%) && (%@#distancefrom% < 4)));
+          keyup(sneak)
+          stop(bwlookmid)
+          keyup(forward)
+          keyup(back)
+          log("&f[&cBW&f] looking to Nearest Teammate. &7(%@&target% | %@#distancefrom% blocks away)")
+          looks(%ENTITYYAWFROMPLAYER%,%ENTITYPITCHFROMPLAYER%,.4);
+          wait(100ms)
+          wait(15000ms)
+          exec("bwlookmid.txt","bwlookmid");
+        endif;
+        if(((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate1%) && (%@#distancefrom% <= 0)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate2%) && (%@#distancefrom% <= 0)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate3%) && (%@#distancefrom% <= 0)));
+          keyup(sneak)
+          stop(bwlookmid);
+          keyup(forward)
+          keyup(back)
+          looks(%ENTITYYAWFROMPLAYER%,%ENTITYPITCHFROMPLAYER%,.6);
+          wait(6500ms)
+          exec("bwlookmid.txt","bwlookmid");
+        endif;
