@@ -1,3 +1,11 @@
+keyup(sneak)
+exec("bwgotogen.txt","bwgotogen");
+exec("bwafk.txt","bwafk");
+@&targetypos = "";
+
+do;
+  unsafe;
+    
     //Iterating over players at middle that fit the criteria - in middle as specified by vals above;
     foreach("entities(filters:[{type:player}])");
       @&target = "%ENTITYNAME%";
@@ -26,3 +34,8 @@
           wait(6500ms)
           exec("bwlookmid.txt","bwlookmid");
         endif;
+      endif;
+    next;
+    endif;
+  endunsafe;
+loop;
